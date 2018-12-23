@@ -1,0 +1,133 @@
+/*main content*/
+#main {
+    margin-left: var(--sidebar-width);
+    transition: all 0.3s;
+}
+
+#sidebar {
+    height: 100%;
+    width: var(--sidebar-width);
+    position: fixed;
+    z-index: 1;
+    top: 54;
+    left: 0;
+    overflow-x: hidden;
+    transition: all 0.3s;
+    list-style-type: none;
+}
+
+
+/*for sidebar close and open*/
+#sidebar.sidebar_toggle {
+    margin-left: calc(-1*var(--sidebar-width));
+}
+#main.sidebar_toggle {
+    margin-left: 0px;
+}
+
+#sidebar #sidebar_header {
+    padding: 1rem 1rem 0rem 1rem;
+    border-bottom: 0.5px solid #CCC;
+}
+#sidebar #story_name {
+    margin: 0rem;
+    font-size: 2rem;
+    word-wrap: break-word;
+}
+
+#sidebar ul#sidebar_list {
+    padding: 0rem;
+    margin: 0rem;
+    border-bottom: 0.5px solid #CCC;
+}
+#sidebar ul#sidebar_list .sidebar_noteset {
+    border-top: 0.5px solid #CCC;
+}
+
+.sidebar_note, .sidebar_noteset {
+    word-wrap: break-word;
+}
+
+#sidebar ul li a {
+    padding: 0.25rem 1.2rem;
+    font-size: 1.1em;
+    display: block;
+    cursor: pointer;
+}
+#add_noteset {
+    padding: 0.75rem 1.2rem;
+    font-size: 1em;
+    /*color: var(--inactive-white);*/
+    cursor: pointer;
+    margin: 0rem;
+}
+#add_noteset:hover {
+    background-color: #eee;
+}
+#sidebar .sidebar_note a {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    padding-left: 2rem;
+    font-size: 0.8em;
+}
+
+#sidebar ul li:hover {
+    background-color: #eee;
+}
+
+/*active noteset*/
+#sidebar .active>a {
+    background-color: #eee;
+}
+#sidebar .active>ul {
+    background-color: #eee;
+}
+#sidebar ul ul a {
+    font-size: 0.9rem !important;
+    padding-top: 0.15rem !important;
+    padding-bottom: 0.15rem !important;
+    padding-left: 2rem !important;
+}
+
+#sidebar a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+#sidebar .remove_noteset,
+#sidebar .edit_noteset {
+    cursor: pointer;
+    float: right;
+    font-size: 0.8rem;
+    margin-top: 0.35rem;
+    display: none;
+}
+
+#sidebar .remove_noteset:hover,
+#sidebar .edit_noteset:hover {
+    color: #ccc;
+}
+
+#sidebar .remove_noteset, #sidebar .edit_noteset{
+    margin-top: 0.5rem;
+}
+
+#sidebar .remove_noteset {
+    margin-right: 0.25rem;
+}
+
+#sidebar #edit_story {
+    cursor: pointer;
+    float: right;
+    font-size: 0.8rem;
+    display: none;
+
+    margin-left: 0.3rem;
+}
+#sidebar #remove_story {
+    cursor: pointer;
+    float: right;
+    font-size: 0.8rem;
+    display: none;
+}
+

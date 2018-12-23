@@ -1,0 +1,144 @@
+.modal-header {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.modal-footer {
+    padding: 0.5rem 1rem;
+}
+.modal-body {
+    padding: 0rem;
+}
+.modal_big {
+    max-width: 60% !important;
+}
+
+.custom_textarea {
+    vertical-align: top;
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.block {
+    margin: 0rem;
+    padding: 0rem 0rem 0rem 1rem;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    position: relative;
+}
+.block_hover {
+    background-color: #f9f9f9;
+}
+
+.block_name {
+    font-size: 0.5rem;
+    font-style: italic;
+    color: var(--pale-font-gray);
+
+    position: absolute;
+    top: 1.2rem; 
+    right: 1.3rem;
+}
+/*----------------------------------------------------------------------------*/
+/*note modal*/
+/*ace editor*/
+#note_modal .ace_editor_custom {
+    margin: 0rem;
+}
+#note_modal .ace_hidden-cursors .ace_cursor {
+    opacity: 0 !important;
+}
+#note_modal .ace_editor_custom {
+    outline: none;
+}
+
+/*link input select menu*/
+.ui-menu {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    width: 30% !important;
+    word-wrap: break-word;
+    z-index: 1500;
+}
+/*.ui-menu .ui-menu-item:hover {
+    background-color: #f9f9f9 !important;
+}*/
+
+.sorting {
+    background-color: #eee;
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
+}
+.sortable-placeholder {
+    background: var(--yellow);
+}
+
+#note_modal .remove_icon {
+    margin-right: 0.1rem;
+    display: none;
+}
+#note_modal .remove_icon:hover {
+    color: #dc3545;
+    cursor: pointer;
+}
+#note_modal .sortable_icon {
+    margin-right: 0.1rem;
+    display: none;
+    cursor: grab;
+}
+#note_modal .sortable_icon:hover {
+    color: #555;
+}
+
+#note_block {
+    margin-top: 0.2rem;
+}
+#control_block {
+    margin: 0.5rem 1rem;
+}
+
+/*option block*/
+.option_warpper {
+    border: 5px solid #bbb;
+    padding: 0rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.option_warpper textarea {
+    padding: 0.5rem 0.375rem !important; 
+}
+.option_warpper legend {
+    width: inherit;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    padding: 0rem 0.1rem;
+    margin-left: 0.5rem;
+}
+
+.option_control_block {
+    padding: 0.5rem 1rem;
+}
+
+.option_delete {
+    padding: 0.06rem 0.5rem;
+}
+
+/*color*/
+#chk_block, .option_chk {
+    /*border-color: #cd6a51;*/
+    border-color: #eee;
+}
+
+/*hide*/
+#chk_block, #link_block, .option_chk_block {
+    display: none;
+}

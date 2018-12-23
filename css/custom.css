@@ -1,0 +1,39 @@
+:root {
+    --primary: #337ab7;
+    --vue-green: #42b983;
+    --msg-blue: #1c84c6;
+    --pale-font-gray: #bbb;
+    --slack-purple: #4E394C;
+    --slack-hover-purple: #3E313B;
+    --slack-active-green: #4C9689;
+    --active-white: #FFFFFF;
+    --inactive-white: #CAC4C9;
+    --sidebar-width: 14rem;
+    --external-yellow: rgba(255,255,200,0.6);
+}
+
+.custom_tmp {
+    display: none;
+}
+
+.icon {
+    margin-right: 0.1rem;
+}
+
+/*modal form*/
+.form-control {
+    margin-bottom: 10px;
+}
+.form-control:focus {
+    border-color: #7F7F7F;
+    border-width: 0.2rem;
+    box-shadow: none;
+}
+.tiny_info {
+    color: #aaa;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+
+

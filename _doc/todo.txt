@@ -1,0 +1,17 @@
+[待辦]
+jsp window, border between option (or not)
+note modal 長文字覆蓋到操作按鈕 (嘗試將textarea右Padding加大)
+
+story-maker 若連結不存在新增時 可以選章節 (比較麻煩)
+story-maker 無法用程式focus問題, 編輯完會自己顯示下一個欄位 (有試過, 解不了)
+note 新增後的位置 都在左上角 會覆蓋 (想不到如何解決)
+jsp 拖移 雖然note不會超出邊界 但是endpoint會位移
+story-maker link選單無法調整hover顏色問題 (暫時不做)
+sidebar選note自動scrol (暫時不做)
+story-maker undo redo (暫時不做)
+story-maker jsp zoom (暫時不做)
+
+[完成]
+離開 捨棄合併. 應該自動判斷有沒有儲存, 若沒有儲存詢問是否要儲存.
+改顏色
+jsp window, option hide some text if it is long

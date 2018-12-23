@@ -1,0 +1,116 @@
+<div id="note_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="note_modal" aria-hidden="false" data-backdrop="static">
+    <div class="modal-dialog modal_big" role="document">
+        <div class="modal-content">
+            <div class="modal-header">對話設定</div>
+            <div class="modal-body">
+                <div id="note_block">
+                    <div class="block">
+                        <span class="block_name"><i class="icon fas fa-key"></i>標題</span>
+                        <textarea id="name_input" class="custom_textarea" rows="1" placeholder="點此輸入標題"></textarea>
+                    </div>
+                    <div id="chk_block" class="block">
+                        <span class="block_name">
+                            <i class="remove_icon far fa-trash-alt"></i>
+                            <i class="icon far fa-check-square"></i>
+                            條件
+                        </span>
+                        <textarea id="chk_input" class="custom_textarea" rows="1" placeholder="點此輸入條件"></textarea>
+                    </div>
+                    <div id="link_block" class="block">
+                        <span class="block_name">
+                            <i class="remove_icon far fa-trash-alt"></i>
+                            <i class="icon fas fa-link"></i>
+                            連結
+                        </span>
+                        <textarea id="link_input" class="custom_textarea" rows="1" placeholder="點此輸入連結"></textarea>
+                    </div>
+                </div>
+                <div id="cmd_block"></div>
+                <div id="control_block">
+                    <button id="add_option" type="button" class="btn btn-light btn-sm"><i class="icon fas fa-list-ul"></i>新增對話選項</button>
+                    <button id="add_msg" type="button" class="btn btn-light btn-sm"><i class="icon fas fa-comment-alt"></i>新增訊息</button>
+                    <button id="add_link" type="button" class="btn btn-light btn-sm"><i class="icon fas fa-link"></i>新增連結</button>
+                    <button id="add_chk" type="button" class="btn btn-light btn-sm"><i class="icon far fa-check-square"></i>新增條件</button>
+                    <!-- <button id="add_func" type="button" class="btn btn-light btn-sm"><i class="icon fas fa-bolt"></i>新增函式</button> -->
+                    <button id="add_code" type="button" class="btn btn-light btn-sm"><i class="icon fas fa-code"></i>新增程式</button>
+                </div>
+                <div id="option_block"></div>
+            </div>
+            <div class="modal-footer">
+                <button id="remove_note" type="button" class="btn btn-outline-danger btn-sm">刪除</button>
+                <button id="note_cancel" type="button" class="btn btn-secondary btn-sm">取消</button>
+                <button id="note_save" type="button" class="btn btn-primary btn-sm">確定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- template -->
+<div id="option_tmp" class="custom_tmp">
+    <fieldset class="option_warpper">
+        <legend>選項</legend>
+        <div>
+            <div class="block option_chk_block">
+                <span class="block_name">
+                    <i class="remove_icon far fa-trash-alt"></i>
+                    <i class="icon far fa-check-square"></i>
+                    條件
+                </span>
+                <textarea class="option_chk custom_textarea" rows="1" placeholder="點此輸入條件"></textarea>
+            </div>
+            <div class="block">
+                <span class="block_name"><i class="icon fas fa-font"></i>文字</span>
+                <textarea class="option_txt custom_textarea" rows="1" placeholder="點此輸入文字"></textarea>
+            </div>
+            <div class="block">
+                <span class="block_name"><i class="icon fas fa-link"></i>連結</span>
+                <textarea class="option_link custom_textarea" rows="1" placeholder="點此輸入連結"></textarea>
+            </div>
+        </div>
+        <div class="option_cmd_block"></div>
+        <div class="option_control_block">
+            <button type="button" class="option_add_chk btn btn-light btn-sm"><i class="icon far fa-check-square"></i>新增條件</button>
+            <!-- <button type="button" class="option_add_func btn btn-light btn-sm"><i class="icon fas fa-bolt"></i>新增函式</button> -->
+            <button type="button" class="option_add_code btn btn-light btn-sm"><i class="icon fas fa-code"></i>新增程式</button>
+            <button type="button" class="option_upward btn btn-light btn-sm"><i class="fas fa-arrow-up"></i></button>
+            <button type="button" class="option_downward btn btn-light btn-sm"><i class="fas fa-arrow-down"></i></button>
+            <button type="button" class="option_remove btn btn-outline-danger btn-sm">刪除選項</button>
+        </div>
+    </fieldset>
+</div>
+
+<div id="msg_tmp" class="custom_tmp">
+    <div class="block" data-kind="msg" data-id="{{id}}">
+        <span class="block_name">
+            <i class="sortable_icon fas fa-arrows-alt"></i>
+            <i class="remove_icon far fa-trash-alt"></i>
+            <i class="icon fas fa-comment-alt"></i>
+            訊息
+        </span>
+        <textarea id="{{id}}" class="custom_textarea" rows="1" placeholder="點此輸入訊息"></textarea>
+    </div>
+</div>
+
+<div id="func_tmp" class="custom_tmp">
+    <div class="block" data-kind="func" data-id="{{id}}" style="padding: 0rem !important;">
+        <pre id="{{id}}" class="ace_editor_custom"></pre>
+        <span class="block_name">
+            <i class="sortable_icon fas fa-arrows-alt"></i>
+            <i class="remove_icon far fa-trash-alt"></i>
+            <i class="icon fas fa-bolt"></i>
+            函式
+        </span>
+    </div>
+</div>
+
+<div id="code_tmp" class="custom_tmp">
+    <div class="block" data-kind="code" data-id="{{id}}" style="padding: 0rem !important;">
+        <pre id="{{id}}" class="ace_editor_custom"></pre>
+        <span class="block_name">
+            <i class="sortable_icon fas fa-arrows-alt"></i>
+            <i class="remove_icon far fa-trash-alt"></i>
+            <i class="icon fas fa-code"></i>
+            程式
+        </span>
+    </div>
+</div>
